@@ -28,5 +28,5 @@ def printNumber(max):
     print(number)
 
 
-printNumber(100)
+printNumber(100);
     
