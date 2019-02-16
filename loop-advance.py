@@ -15,7 +15,11 @@ print('ROW : ' + row)
 print('COLUMN : ' + column)
 
 
-
+def devider():
+  tempDevider = ''
+  for number in range(int(column)):
+    tempDevider += '#'
+  print(tempDevider)
 
 def drawPlayBoard(row, column):
   totalRow = row + (row - 1)
@@ -33,8 +37,11 @@ def drawPlayBoard(row, column):
     print(rowString);
 
 
+customRow = input('Enter Custom Row : ')
+customColumn = input('Enter Custom Column')
 # Draw Dynamic Play Board
-drawPlayBoard(4,5)
-
+drawPlayBoard(customRow,customColumn)
+# Draw a Devider
+devider()
 # Covert the screen
 drawPlayBoard(int(row)/2, int(column)/2)
