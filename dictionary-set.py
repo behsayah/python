@@ -10,7 +10,7 @@
 data = {}
 
 def setDate():
-  data["artist"] = "Sample Singer";
+  data["artist"] = "Sample Singer"
   data["song"] = "Sample Song"
   data["album"] = "Sample Album"
   data["year"] = 2019

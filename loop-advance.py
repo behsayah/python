@@ -37,11 +37,11 @@ def drawPlayBoard(row, column):
     print(rowString);
 
 
-customRow = input('Enter Custom Row : ')
-customColumn = input('Enter Custom Column')
+customRow = int(input('Enter Custom Row : '))
+customColumn = int(input('Enter Custom Column : '))
 # Draw Dynamic Play Board
 drawPlayBoard(customRow,customColumn)
 # Draw a Devider
 devider()
 # Covert the screen
-drawPlayBoard(int(row)/2, int(column)/2)
+drawPlayBoard(int(customRow/2), int(customColumn/2))
