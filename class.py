@@ -174,3 +174,4 @@ firstCar.writeInCenter('Cars Detail')
 firstCar.drawLine('-')
 
 firstCar.printAll()
+

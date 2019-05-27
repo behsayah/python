@@ -60,8 +60,15 @@ class Connect:
         self.row = int(input('Define board height : '))
 
     def getBoardWidth(self):
-        self.column = int(
-            input(bcolors.WARNING + 'Define board width : ' + bcolors.ENDC))
+        try:
+            self.column = int(
+                input(bcolors.WARNING + 'Define board width : ' + bcolors.ENDC))
+        except:
+            print(bcolors.FAIL +
+                  'We face to a issue, please try again...' + bcolors.ENDC)
+            self.getBoardWidth()
+        finally:
+            print('The board with is : ', sorted(self.column))
 
     def switchPlayer(self):
         if(self.player == 'A'):
